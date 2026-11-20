@@ -1,0 +1,25 @@
+{
+    "aviso": "Os limites são hipotéticos e não são dados reais de nenhuma empresa.",
+    "formato_data_hora": "%Y-%m-%dT%H:%M:%S",
+    "faixas_validas": {
+        "fluxo_minimo_agua": 0.0,
+        "fluxo_maximo_agua": 100.0,
+        "temperatura_minima": 0.0,
+        "temperatura_maxima": 100.0
+    },
+    "limites": {
+        "Atenção": {
+            "fluxo_agua_abaixo_de": 15.0,
+            "temperatura_acima_de": 40.0
+        },
+        "Crítico": {
+            "fluxo_agua_abaixo_de": 10.0,
+            "temperatura_acima_de": 45.0
+        }
+
+    },
+    "caminhos": {
+        "nome_do_banco": "sisp.db",
+        "nome_do_log": "log_erros.csv"
+    }
+}
