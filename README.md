@@ -2,7 +2,7 @@
 
 Script em Python que lê medições de moldes em formato JSONL, **valida a qualidade de cada registro**, classifica a situação de cada medição (normal, atenção ou crítico) e grava o resultado num banco **SQLite**. Registros com problema não entram no banco: vão para um **log de erros em CSV**, com o motivo da rejeição.
 
-Esta é a minha parte do **SISP**, um protótipo acadêmico de monitoramento preditivo desenvolvido em equipe de 6 pessoas no curso de Análise e Desenvolvimento de Sistemas da ETEP (São José dos Campos – SP), a ser apresentado na EXPOETEP em novembro de 2026.
+Esta é a minha parte do **SISP (Sistema Inteligente de Sensores Preditivos)**, um protótipo acadêmico de monitoramento preditivo desenvolvido em equipe de 6 pessoas no curso de Análise e Desenvolvimento de Sistemas da ETEP (São José dos Campos – SP), a ser apresentado na EXPOETEP em novembro de 2026.
 
 > Os dados e os limites usados aqui são **simulados**. Não são dados reais de nenhuma empresa.
 
