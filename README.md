@@ -2,7 +2,7 @@
 
 Script em Python que lê medições de moldes em formato JSONL, **valida a qualidade de cada registro**, classifica a situação de cada medição (normal, atenção ou crítico) e grava o resultado num banco **SQLite**. Registros com problema não entram no banco: vão para um **log de erros em CSV**, com o motivo da rejeição.
 
-Esta é a minha parte do **SISP (Sistema Inteligente de Sensores Preditivos)**, um protótipo acadêmico de monitoramento preditivo desenvolvido em equipe de 6 pessoas no curso de Análise e Desenvolvimento de Sistemas da ETEP (São José dos Campos – SP), a ser apresentado na EXPOETEP em novembro de 2026.
+Esta é a minha parte do **SISP (Sistema Inteligente de Sensores Preditivos)**, um protótipo acadêmico de monitoramento preditivo desenvolvido em equipe de 6 pessoas no curso de Análise e Desenvolvimento de Sistemas da ETEP (São José dos Campos – SP), apresentado na EXPOETEP 2026, com nota máxima.
 
 > Os dados e os limites usados aqui são **simulados**. Não são dados reais de nenhuma empresa.
 
@@ -53,6 +53,11 @@ Saída com os dados de exemplo:
 
 ```
 Resumo: lidos = 36 | aceitos = 36 | rejeitados = 0
+```
+Para rodar os testes automatizados (26 testes de classificação, limites, formato de data e validação):
+
+```bash
+python testar_processamento.py
 ```
 
 Resultado no banco: 17 medições **NORMAL**, 9 em **ATENÇÃO** e 10 **CRÍTICAS**. Por exemplo, o molde M001 perde vazão aos poucos até ficar crítico, o M002 aquece até passar de 45 °C e o M003 passa a acusar vazamento de óleo a partir das 08:30.
